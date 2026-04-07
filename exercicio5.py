@@ -1,16 +1,16 @@
-altura = int(input("Qual a altura do seu reservaório em centímetros: "))
-largura = int(input("Qual a largura do seu reservaório em centímetros: "))
-comprimento = int(input("Qual o comprimento do seu reservaório em centímetros: "))
+altura = int(input("Qual a altura do seu reservaório em metros: "))
+largura = int(input("Qual a largura do seu reservaório em metros: "))
+comprimento = int(input("Qual o comprimento do seu reservaório em metros: "))
 litrosdiario = float(input("Quantos litros você consome em média p/ dia?"))
 #volume e litros
-volumecm = altura * largura * comprimento #cm³
-volumemetro = volumecm // 100 #m³
-litroemagua = volumemetro * 1000
+volumem = altura * largura * comprimento * 1000#m³
+
+
 #autonomia
-dias = litroemagua // litrosdiario
+dias = volumem // litrosdiario
 
 
-print(f"A capacidade máxima de água que se eu reservatório é capaz de suportar são {litroemagua} L")
+print(f"A capacidade máxima de água que se eu reservatório é capaz de suportar são {volumem} L")
 print(f"A autonomia do seu reservatório é que ele aguente {round(dias,)} dias")
 if dias < 2 :
     print("Seu consumo é elevado")
