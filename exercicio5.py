@@ -18,3 +18,5 @@ elif dias >= 2 and dias <= 7:
     print("Seu consumo é moderado")
 elif dias > 7:
     print ("Seu consumo é reduzido")
+
+    #algo de errado no resultado , analisar dps
